@@ -1,6 +1,7 @@
 // src/components/DataFetcher.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import "./DataFetcher.css"
 
 const DataFetcher = () => {
   const [data, setData] = useState([]);
@@ -54,6 +55,10 @@ const DataFetcher = () => {
 
   return (
     <div>
+        <header className="header">
+          <h1>Data Fetched!!!</h1>
+        </header>
+      <main>
       <ul>
         {data.map(item => (
           <li key={item.id}>
@@ -64,6 +69,7 @@ const DataFetcher = () => {
       </ul>
       {loading && <p>Loading...</p>}
       {!loading && !hasMore && <p>No more data</p>}
+      </main>
     </div>
   );
 };
