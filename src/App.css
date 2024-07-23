@@ -1,0 +1,72 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  color: #555;
+}
+
+p {
+  margin: 0;
+  font-size: 1em;
+  color: #777;
+}
+
+p:last-of-type {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+p.loading,
+p.no-more-data {
+  text-align: center;
+  color: #999;
+  font-size: 1em;
+  margin-top: 20px;
+}
